@@ -1,0 +1,38 @@
+.container{
+    max-width: 500px;
+}
+
+input {
+    display: none;
+}
+
+input + label{
+    display: inline-block;
+}
+
+.content > .tab{
+    display: none;
+}
+
+#tab1:checked ~ .content .tab.content1,
+#tab2:checked ~ .content .tab.content2,
+#tab3:checked ~ .content .tab.content3{
+    display: block;
+}
+
+.tab-title{
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 0 1rem;
+}
+
+#tab1:checked + .tab-title,
+#tab2:checked + .tab-title,
+#tab3:checked + .tab-title{
+    background-color: cadetblue;
+}
+.content {
+    border: 1px solid black;
+    width: 100%;
+    padding: 1rem;
+}
